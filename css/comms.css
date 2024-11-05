@@ -199,6 +199,14 @@ h3 { font-size: 3.2rem;}
   height: 120px; /* 마지막 두 이미지도 고정 높이 설정 */
 }
 
+/* 16번째 이미지만 상단 정렬 */
+.column img:nth-child(3), 
+.column img:nth-child(14),
+.column img:nth-child(16) {
+  object-position: top; /* 이미지 상단이 보이도록 설정 */
+}
+설명
+
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
@@ -377,10 +385,9 @@ ul.wayto .navi_button>span {
 
 .text-overlay {
   position: relative;
-    bottom: 5rem;
+    top: 25rem;
     color:black;
     text-align: center;
-    line-height: 4rem;
     font-family: 'GowunBatang-Regular', sans-serif;
     font-size: 1.6rem;
     opacity: 0.7;
