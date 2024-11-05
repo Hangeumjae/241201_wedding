@@ -1,0 +1,793 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wrap {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h3,.header-top p
+{font-family: 'Minhye', sans-serif;}
+
+.wedding-area {
+    background: white;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1); /* 10px */
+    text-align: center;
+    max-width:42rem; /* 600px */
+    overflow: hidden;
+}
+
+.inner-header {
+    text-align: center;
+    letter-spacing: -.2px;
+    font-family: Crimson Pro;
+    color: #49413a;
+}
+
+.full-page-header h1 { font-size: 2.5rem; font-weight: 700;/* 헤더 제목 폰트 크기 */}
+
+.header-top{
+  position: relative;
+  width: 100%;
+  padding:4rem 0 3rem;
+background-color: #fff;
+font-family: 'GowunBatang-Regular', sans-serif; 
+}
+
+
+.header-top p,
+.header-bottom p {
+  padding-top:1rem; 
+  line-height: 2.5rem;
+  font-family: 'GowunBatang-Regular', sans-serif; 
+  font-size: 1.4rem;}
+
+  .header-bottom h3 {font-size: 2.8rem;}
+  header .top-img img {max-width: 100%;}
+
+
+p {
+line-height: 2.5rem;
+font-family: 'GowunBatang-Regular', sans-serif; 
+font-size: 1.5rem;
+}
+
+
+.section3 .tel_wrap2 .img_con {
+	display: flex;
+	gap: 6px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+section  {
+  position: relative;
+  padding: 2.5rem;}
+
+
+  .tit_area { 
+    padding:3rem 0;
+    text-align: center;
+    color:#d2a369;
+}
+.tit_area span {
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'GowunBatang-Regular', sans-serif; 
+}
+
+h3 { font-size: 3.2rem;}
+
+.invitation .img-area {
+  padding:3rem 0 ; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.invitation .img-area img {
+  width: 95%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.imgbox span {font-size: 1.2rem; font-weight: 700;}
+
+.img-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* li 요소 간격 */
+}
+
+.img-area li {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* 세로 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+  
+  .top-img::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 30%;
+    background: linear-gradient(to top, white, transparent);
+}
+
+
+.container {
+    padding:2rem 0;
+    background: white;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1); /* 10px */
+    text-align: center;
+    max-width: 60rem; /* 600px */
+    overflow: hidden;
+}
+
+
+
+.day {padding:5rem 0;}
+.day img {vertical-align: middle;}
+.day h3 {padding-bottom:2rem;}
+
+.name {
+  font-size: 1.4rem;
+  display: flex;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  font-family: 'GowunBatang-Regular', sans-serif; }
+
+.name li:first-child::before {
+  content:url(../img/ic-flower.png);}
+
+
+
+/*포토 갤러리*/
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: space-between;
+}
+.photo .row {padding:0;}
+.row img {width: 100%;}
+/* Create four equal columns that sits next to each other */
+
+.column {
+  display: flex;
+  flex-wrap: wrap; /* 줄바꿈 설정 */
+  gap:2px; /* 이미지 간격 */
+  justify-content: center; /* 이미지들을 중앙 정렬 */
+}
+
+
+
+  .photo img {
+  object-position: 50% 55%;
+  object-fit: cover;
+}
+
+
+.column img {
+  width: calc(33.333% - 2px); /* 기본적으로 가로로 3개씩 배치 */
+  height: 120px; /* 이미지 고정 높이 */
+  object-fit: cover; /* 이미지 비율 유지하면서 채우기 */
+  object-position: center; /* 이미지 중앙 정렬 */
+}
+
+/* 마지막 두 이미지를 꽉 차게 설정 */
+.column img:nth-last-child(2),
+.column img:last-child {
+  width: calc(50% - 1px); /* 가로로 2개씩 꽉 차게 배치 */
+  height: 120px; /* 마지막 두 이미지도 고정 높이 설정 */
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+p.map {
+  padding-top:3rem; 
+  font-size: 1.8rem;
+  color: var(--txt-black);}
+  p.map span {font-size: 1.8rem;}
+
+/*토글*/
+.toggle-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-list p {font-family: Arial, Helvetica, sans-serif;}
+
+.toggle-item {margin-bottom: 10px;}
+.toggle-checkbox {display: none;}
+
+.toggle-label {
+  display: block;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #ffff;
+  color: #333;
+  font-size:1.6rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  border: solid 2px #E1E4E9;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-family: 'GowunBatang-Regular', sans-serif; }
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  padding: 0 10px;
+  border-radius: 0.5rem;
+}
+
+.toggle-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: solid 1px #E1E4E9;
+}
+.toggle-content li p {font-size: 1.4rem; text-align: left; line-height: 2.5rem;}
+.toggle-content li span {font-weight: 700;}
+
+
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
+  max-height: 25rem; /* 충분히 큰 값으로 설정 */
+  padding: 10px;
+}
+
+.copy-button {
+  display: block;
+  padding: 0.5rem 1rem;
+  background: #f1f3f8;
+  color: #333;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  right: 12px;
+  top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  font-family: noto sans kr, sans-serif;
+  line-height: 2.4rem;
+  font-weight: 700;
+  border-radius:1rem;
+}
+
+.accst02 .pack_wrap.active .pack i {
+  transform: rotate(180deg);
+}
+.accst02 .pack > i {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.navi_button_wrap {
+  display: flex;
+  margin: 0 -3px;
+  margin-top: 12px
+}
+.navi_button {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  margin: 0 3px;
+  border: 1px solid #eaeaea;
+  height: 5.7rem;
+  width: 33.333%;
+  background: #fff;
+  border-radius: 12px;
+  height: 4rem;
+  border-radius: 8px
+}
+
+ul.wayto .navi_button>span {
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 22px
+}
+
+.navi_button>span:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/ico_nav03.png);
+  background-size: 17px auto;
+  margin-top: -8.5px
+}
+
+.navi_button:nth-child(2)>span:before {background-image: url(../img/ico_nav02.png)}
+.navi_button:nth-child(3)>span:before { background-image: url(../img/ico_nav01.png)}
+.navi_button>span {font-size: 1.4rem;}
+
+
+.image-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15rem;
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+}
+
+.text-overlay {
+  position: relative;
+    bottom: 5rem;
+    color:black;
+    text-align: center;
+    line-height: 4rem;
+    font-family: 'GowunBatang-Regular', sans-serif;
+    font-size: 1.6rem;
+    opacity: 0.7;
+}
+
+.text-overlay h1, .text-overlay p {margin: 0;}
+
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /*padding-top: 60px;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+/*이미지 정중앙 정렬*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.location {
+  padding:3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ .location li {text-align: left; }
+ .location ul li {font-size: 1.4rem;line-height: 2.4rem; }
+.loading-row {padding:3rem 0; }
+.loading-row strong {padding-bottom: 1rem;}
+ .location ul li span {font-weight: 700; padding-bottom:1rem;}
+
+.location p {padding-bottom:1.5rem; font-size:1.6rem; font-weight: 700;}
+
+.scroll_wrap {overflow: hidden;}
+.scroll_on {padding:50px 0;font-size: 24px;font-weight:700;text-align: center;opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+
+.pt30 {padding-top:3rem;}
+
+
+
+@media screen and (max-width: 45rem)  { 
+  .wadding-area {width:100%}
+}
+
+
+
+
+
+#user_wrap {
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	color: var(--common-font-color);
+	background: rgba(153, 153, 153, 0.05);
+}
+#user_wrap * {
+	-webkit-tap-highlight-color : transparent !important;
+	box-sizing: border-box;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#user_wrap *::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+#user_wrap input {
+	font-family: var(--font-family);
+}
+
+#user_wrap input:focus {
+	outline: none;
+}
+/*section4*/
+
+.section4 {
+	position: relative;
+	padding: var(--section-margin);
+	transform: translateY(10px);
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+  padding-top: 3rem;;
+}
+
+.section4.active {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.section4 .table_wrap.type_1 {
+	border-bottom: 2px solid #2f2f2f;
+	/*padding-bottom: 25px;*/
+	width: 90%;
+	margin: 0 auto;
+}
+
+.section4 table {
+	position: relative;
+	width: 100%;
+}
+
+
+.section4 .table_wrap.type_1 table thead {
+text-align: center;
+border-top: 2px solid #2f2f2f
+}
+
+
+.section4 .table_wrap.type_1 table caption {
+	margin:2rem;
+}
+
+.section4 .table_wrap.type_1 table caption span {
+	text-align: left;
+	display: block;
+	font-size: 2rem;
+	font-weight: 500;
+  line-height: 3rem;
+  font-family: 'GowunBatang-Regular', sans-serif; 
+	color: var(--point-color1);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.section4 .table_wrap.type_1 table thead tr th {
+	line-height: 4.5rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.section4 .table_wrap.type_1 table thead tr th:first-child {color: var(--point-color1);}
+
+.section4 .table_wrap.type_1 table tbody {text-align: center;}
+
+.section4 .table_wrap.type_1 table tbody td {
+	position: relative;
+	line-height: 4.5rem;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.section4 .table_wrap table tbody tr td.active {
+	color: var(--btn-font-color);
+	z-index: 1;
+}
+
+table .active {
+  background-image: url("../img/heart.png"); /* 하트 이미지 경로 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section4 .table_wrap table tbody tr td em {
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	width: 100%;
+	max-width: 54px;
+	color: var(--black);
+	text-align: center;
+	/*font-size: var(--font-xsmall);*/
+	font-size: 11px;
+	font-style: normal;
+	line-height: 1.2;
+}
+
+.section4 .table_wrap table tbody tr td.active em {
+	display: block;
+}
+
+.section4 .d_day {
+	margin: 60px 20px;
+}
+
+.section4 .d_day .sub_title {
+	/*display: block;*/
+	text-align: center;
+	width: 100%;
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.section4 .d_day .sub_title > span {
+	/*min-width: 120px;*/
+	display: inline-flex;
+	/*align-items: baseline;*/
+	align-items: center;
+	/*width: auto;*/
+	/*text-wrap: none;*/
+	/*flex-wrap: nowrap;*/
+}
+
+.section4 .d_day .sub_title span {
+	font-size: var(--font-regular);
+	margin: 0 3px;
+}
+
+.section4 .d_day .calc {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+
+.section4 .d_day.after .calc {
+	justify-content: center;
+	align-items: center;
+}
+
+.section4 .d_day.after .calc p {
+	margin-left: 8px;
+}
+.section4 .d_day.after .calc span::after {
+	display: none;
+}
+
+.section4 .d_day .calc span {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*flex: 1;*/
+	font-size: var(--font-large);
+	min-width: 60px;
+	min-height: 60px;
+	border-radius: 50%;
+	background: var(--point-color2);
+	color: var(--btn-font-color);
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.section4 .d_day .calc span::after {
+	content: "Days";
+	position: absolute;
+	bottom: -22px;
+	font-size: var(--font-xsmall);
+	font-weight: 500;
+	color: #333;
+}
+
+.section4 .d_day .calc span:nth-child(2)::after {content: "Hours"}
+.section4 .d_day .calc span:nth-child(3)::after {content: "Minutes"}
+.section4 .d_day .calc span:nth-child(4)::after {content: "Seconds"}
+
+.section4 .table_wrap.type_2 {
+}
+
+.section4 .table_wrap.type_2 .calendar_caption {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section4 .table_wrap.type_2 .calendar_caption .c_title {
+	font-size: 2rem;;
+	font-weight: 500;
+	color: var(--point-color1);
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+	margin-bottom: 16px;
+}
+
+.section4 .table_wrap.type_2 .calendar_caption .c_sub {
+	font-size: var(--font-regular);
+	margin-bottom: 6px;
+}
+
+.section4 .table_wrap.type_2 .img_box {
+	width: calc(100% - 80px);
+	/*width: 100%;*/
+	height: 300px;
+	box-shadow: var(--box-shadow);
+	margin: 0 auto 30px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.section4 .table_wrap.type_2 .img_box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.section4 .table_wrap.type_2 table tbody tr td.active::before {
+	/*display: none;*/
+	width: 32px;
+	height: 32px;
+}
+
+.section4 .table_wrap.type_2 table {
+	width: 80%;
+	min-width: 31rem;
+	position: relative;
+	text-align: center;
+	color: #4b4b4b;
+	margin: 0 auto;
+	font-size: var(--font-medium);
+}
+
+.section4 .table_wrap.type_2 table caption {
+	line-height: initial;
+	text-align: center;
+	margin-bottom: 16px;
+	padding-bottom: 8px;
+	/*border-bottom: 1px solid var(--point-color2);*/
+}
+
+.section4 .table_wrap.type_2 table caption p.table_title span {
+	font-size: var(--font-large);
+	font-weight: 500;
+	color: var(--point-color1);
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+	margin-bottom: 1.6rem;
+}
+
+.section4 .table_wrap.type_2 table caption p.table_title span small {
+	font-size:1rem;
+	color: #2f2f2f;
+}
+
+.section4 .table_wrap.type_2 table caption p.table_sub {}
+.section4 .table_wrap.type_2 table caption p.table_sub span {font-size: 14px;}
+.section4 .table_wrap.type_2 table thead {line-height: 3;}
+.section4 .table_wrap.type_2 table thead tr {}
+.section4 .table_wrap.type_2 table thead tr th {}
+.section4 .table_wrap.type_2 table thead tr th.color {
+	color: var(--point-color1);
+}
+.section4 .table_wrap.type_2 table tbody {}
+.section4 .table_wrap.type_2 table tbody tr {}
+.section4 .table_wrap.type_2 table tbody tr td {
+	position: relative;
+	height: 42px;
+}
+.section4 .table_wrap.type_2 table tbody tr td.active {}
+.section4 .table_wrap.type_2 table tbody tr td em {
+	display: none;
+}
+.section4 .table_wrap.type_2 table tfoot {}
+.section4 .table_wrap.type_2 table tfoot tr {
+	height: 16px;
+}
